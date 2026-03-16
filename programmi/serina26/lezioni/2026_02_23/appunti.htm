@@ -1,0 +1,59 @@
+<hr />
+<p>2026.02.26 # LA COMPILAZIONE ### COMANDI javac NomeClasse.java java
+NomeClasse ### FILE SORGENTE In java, ogni classe ha il suo file .java.
+Esso viene compilato in un file .class, che contiene il bytecode
+necessario per eseguire il programma sulla java virtual machine. ###
+VANTAGGI DELLA JVM Un vantaggio è la sicurezza del prodotto: non potrà
+mai (?) uscire dalla java virtual machine, fornendo uno strato di
+protezione. È anche in grado di fare chiamate di sistema e di parlare
+direttamente con l’hardware. È molto più semplice fare una jvm che un
+compilatore. ### FILE LIBRERIA Vengono caricati assieme ai file classe
+al momento della compilazione.</p>
+<h1 id="errori">ERRORI</h1>
+<h3 id="errori-di-compile-time">ERRORI DI COMPILE TIME</h3>
+<p>Errori che si presentano durante la fase di compile: sono tipicamente
+i più facili da sistemare. ### ERRORI DI RUNTIME Errori che si
+presentano durante l’esecuzione: ad esempio, una divisione per 0.</p>
+<h1 id="classi">CLASSI</h1>
+<p>Rappresentano una famiglia di oggetti dagli attributi simili.
+presumendo di avere una classe chiamata <a
+href="Assistant/Assistant.java">Assistant</a>, entro a</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode java"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">static</span> <span class="dt">void</span> <span class="fu">main</span><span class="op">(</span>string args<span class="op">[]){</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>   Assistant assistente<span class="op">;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>   assistente <span class="op">=</span> <span class="kw">new</span> <span class="fu">Assistant</span><span class="op">();</span> <span class="co">//crea l&#39;oggetto assistente</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>   assistente<span class="op">.</span><span class="fu">saluta</span><span class="op">();</span> <span class="co">//chiama il metodo saluta all&#39;interno di assistente</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<p>assistente punta sempre alla zona dove parte l’oggetto, quindi pesa
+sempre 4 kB.</p>
+<h2 id="classe-assistente">CLASSE ASSISTENTE</h2>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode java"><code class="sourceCode java"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="kw">class</span> Assistant<span class="op">{</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">private</span> <span class="co">/*questa variabile è visibile solo ai membri della mia classe*/</span> <span class="dt">final</span> <span class="co">/*essendo final non può essere modificata*/</span> <span class="bu">String</span> MIO_SALUTO <span class="op">=</span> <span class="st">&quot;lo tiro fuori in public class e poi ti tocco nelle tue variabili private&quot;</span><span class="op">;</span> <span class="co">//le stringhe si mettono come variabili; le variabili sono sempre scritte in maiuscolo. Quando è parte di una classe è un attributo; in un metodo diventa una variabile.</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">//Al posto di usare una costante, si può definire un attributo variabile. Se la variabile stringa non viene inizializzata, diventa la stringa nulla.</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="bu">String</span> nuovo_saluto<span class="op">;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="co">//Un costruttore è un metodo speciale che definisce i valori dei miei attributi</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="fu">Assistant</span> <span class="op">(</span><span class="bu">String</span> cosaDevoDire<span class="op">){</span> <span class="co">//può avere attributi in ingresso</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>        nuovo_saluto <span class="op">=</span> cosaDevoDire<span class="op">;</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">saluta</span> <span class="op">(){</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>        <span class="bu">System</span><span class="op">.</span><span class="fu">out</span><span class="op">.</span><span class="fu">println</span><span class="op">(</span>MIO_SALUTO<span class="op">);</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<h2 id="dettagli">DETTAGLI</h2>
+<h3 id="autodocumentazione">AUTODOCUMENTAZIONE</h3>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode java"><code class="sourceCode java"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">/**</span>Questi commenti servono a generare automaticamente la documentazione<span class="co">. </span>Tag che iniziano con <span class="co">@</span> forniscono varie funzioni<span class="co">.</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a> <span class="co">*/</span></span></code></pre></div>
+<h3 id="n.b.">N.B. :</h3>
+<p>Se mostrate gli attributi in pubblico al professore ci possono essere
+dei problemi.</p>
+<h3 id="errori-scemi">Errori scemi</h3>
+<p>A volte il sistema non si accorge del fatto che c’è un errore di
+compilazione.</p>

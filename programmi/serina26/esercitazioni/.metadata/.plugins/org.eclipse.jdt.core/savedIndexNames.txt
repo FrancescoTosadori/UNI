@@ -1,0 +1,7 @@
+INDEX VERSION 1.134+/home/tosa/programmi/uni/serina26/esercitazioni/.metadata/.plugins/org.eclipse.jdt.core
+2439331789.index
+4028743266.index
+4057649429.index
+4283831159.index
+1865797976.index
+900586112.index

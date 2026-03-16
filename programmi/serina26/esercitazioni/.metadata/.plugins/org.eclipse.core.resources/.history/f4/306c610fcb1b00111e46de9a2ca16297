@@ -1,0 +1,44 @@
+package it.unibs.fp.puntirette;
+
+public class Punto {
+
+	private double x;
+	private double y;
+	
+	//source>Generate constructor using fields
+	public Punto(double _x, double _y) {
+		x = _x;
+		y = _y;
+	}
+
+	//Generiamo dei metodi di get e set
+	public double getX() {
+		return x;
+	}
+
+	public void setX(double x) {
+		this.x = x;
+	}
+
+	public double getY() {
+		return y;
+	}
+
+	public void setY(double y) {
+		this.y = y;
+	}
+	
+	//generiamo un tostring
+	@Override
+	public String toString() {
+		return String.format("(%.2f, %.2f)", x, y);
+	}
+	
+	public double calcolaDistanza(Punto p) {
+		double diffX = x - p.getX();
+		double diffY = y - p.getY();
+		double quadDiffX = Math.pow(diffX, 2);
+		double quadDiffY = Math.pow(diffY, 2)
+		return Math.sqrt(diffX*diffX + diffY*diffY);
+	}
+}

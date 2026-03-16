@@ -1,0 +1,35 @@
+package it.unibs.fp.puntirette;
+
+import it.unibs.fp.mylib.InputDati;
+
+public class MainPuntiRette {
+
+	public static void main(String[] args) {
+		//sysout ctrl + space → System.out.println("");
+		System.out.println("ciao");
+		
+		double x1 = InputDati.leggiDouble("Inserisci coordinata x1");
+		double y1 = InputDati.leggiDouble("Inserisci coordinata y1");
+
+		double x2 = InputDati.leggiDouble("Inserisci coordinata x2");
+		double y2 = InputDati.leggiDouble("Inserisci coordinata y2");
+		
+		Punto p1 = new Punto(x1,y1);
+		Punto p2 = new Punto(x2,y2);
+		
+		System.out.println(p1);
+		System.out.println(p2);
+		
+		System.out.println(
+				String.format("distanza = %.2f",
+				p1.calcolaDistanza(p2))
+				);
+		
+		Retta r1 = new Retta(p1,p2);
+		
+		
+		
+		//System.out.println(String.format("(%.2f, %.2f)", x1, y1));
+	}
+
+}

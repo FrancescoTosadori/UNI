@@ -1,0 +1,7 @@
+package it.unibs.fp.puntirette;
+
+public class Retta {
+
+	private double coeffAngolare;
+	private double offset;
+}

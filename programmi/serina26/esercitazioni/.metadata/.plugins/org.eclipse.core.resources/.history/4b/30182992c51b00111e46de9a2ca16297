@@ -1,0 +1,8 @@
+package it.unibs.fp.puntirette;
+
+public class MainPuntiRette {
+
+	public static void main(String[] args) {
+	}
+
+}

@@ -1,0 +1,17 @@
+package it.unibs.fp.renderer;
+
+public class RendererMain {
+
+	public static void main(String[] args) {
+		Vector r = new Vector(1,1,1);
+		double radius = 1;
+		
+		r.normalise();
+		r.scale(radius);
+		
+		Screen display = new;
+		display.map(0.25, 0, 1, 0, 100);
+		
+	}
+	
+}

@@ -1,0 +1,22 @@
+package it.unibs.fp.renderer;
+
+public class RendererMain {
+	
+	static double radius = 1;
+
+	static Vector r = new Vector(1,1,1);
+	
+	public static void main(String[] args) {
+		
+		
+		r.normalise();
+		r.scale(radius);
+		
+		Screen display = new Screen();
+		
+		display.clear();
+		display.print();
+		
+	}
+	
+}
