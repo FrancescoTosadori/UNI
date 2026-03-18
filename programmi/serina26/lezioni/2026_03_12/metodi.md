@@ -14,6 +14,16 @@ Si possono avere tanti costruttori quanto si vuole, ma devono essere distinti da
 ## Passaggio degli argomenti
 Sono passati per valore! Viene creata una copia locale del valore passato.
 
-Faremo qualche disegnino su un foglio
+Faremo qualche disegnino su un foglio (vedi quaderno)
 
-lalalal
+## Scope delle variabili
+
+Beh non c'è molto da dire.
+
+## Vita delle variabili locali
+
+Pota casso non è diverso da C. 
+
+Non serve ottimizzare il codice, è più importante che sia elegante. (doubt)
+
+Gli oggetti muoiono nessuna variabile si riferisce più a quell'oggetto.
