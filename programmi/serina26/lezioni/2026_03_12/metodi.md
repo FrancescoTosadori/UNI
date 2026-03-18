@@ -27,3 +27,19 @@ Pota casso non è diverso da C.
 Non serve ottimizzare il codice, è più importante che sia elegante. (doubt)
 
 Gli oggetti muoiono nessuna variabile si riferisce più a quell'oggetto.
+
+## Attributi
+
+### Static
+Creati tra le graffe di una classe, fuori dai metodi.  Esistono come unici esemplari, creati in memoria quando si fa l'import della classe. Non muoiono mai, vengono caricati quando viene fatto l'import della classe. Morirà quando viene chiuso il programma. È visibile dentro tutta la classe e, se definito pubblico, anche altre classi potranno vederlo. 
+### Non static
+Esistono nel momento in cui viene creato un new. 
+
+## Variabili
+Diversi dagli attributi, penso siano quelle usate per far funzionare le classi (ma non ne sono sicuro).
+
+## Espressione
+Funzione che va a calcolare un valore e fornisce un risultato. 
+
+## Java è fortemente tipato (o tipizzato)
+Il compilatore effettua molti più controlli sul fatto che i tipi siano al posto giusto.
