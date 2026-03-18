@@ -15,3 +15,5 @@ Si possono avere tanti costruttori quanto si vuole, ma devono essere distinti da
 Sono passati per valore! Viene creata una copia locale del valore passato.
 
 Faremo qualche disegnino su un foglio
+
+lalalal
