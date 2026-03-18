@@ -1,5 +1,0 @@
-package it.unibs.fp.renderer;
-
-public class Matrix {
-	private double e1[], e2[], e3[];
-}

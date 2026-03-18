@@ -6,6 +6,12 @@ Strutturare bene il codice è importante:
  - Metodi comuni sono ``toString()``, 
  - Piccolo è bello: il main deve essere snello ([_chorus_] mi piace il pisello) 
  e i metodi devono rientrare tutti nello stesso metodo. È importante anche semplificare il più possibile il codice.
- - 
-Si possono avere metodi diversi con nome uguale, se la lista di argomenti formali è la stessa [overloading]. I valori di ritorno non distinguono l'overloading.
 
+Si possono avere metodi diversi con nome uguale, se la lista di argomenti formali è la stessa [overloading]. I valori di ritorno non distinguono l'overloading. 
+
+Si possono avere tanti costruttori quanto si vuole, ma devono essere distinti dal tipo di dato in entrata. 
+
+## Passaggio degli argomenti
+Sono passati per valore! Viene creata una copia locale del valore passato.
+
+Faremo qualche disegnino su un foglio
