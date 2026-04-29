@@ -1,8 +1,0 @@
-package it.unibs.fp.puntirette;
-
-public class Punto {
-
-	private double x;
-	private double y;
-	
-}
