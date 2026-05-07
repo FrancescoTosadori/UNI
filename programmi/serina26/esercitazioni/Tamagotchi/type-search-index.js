@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html","k":"18"},{"p":"it.unibs.fp.tamagotchi","l":"Main"},{"p":"it.unibs.fp.tamagotchi","l":"Tamagotchi"},{"p":"it.unibs.fp.tamagotchi","l":"TamaTestMatricole"}];updateSearchResults();
